@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/dengwirda/jigsaw-python/archive/v{{ version }}.tar.gz
   sha256: 6c628cf3fe453226563150367097cae69deff4232893b98c4673a4b7a7c90471
-  patches:
-    - 0001-add-find-library.patch
 
 build:
   noarch: python
@@ -22,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - jigsaw >=0.9.12
+    - jigsaw >=0.9.13
     - numpy
     - pathlib
 
