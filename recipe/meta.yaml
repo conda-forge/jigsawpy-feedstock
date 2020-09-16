@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - jigsaw >=0.9.13
+    - jigsaw >=0.9.13.1
     - numpy
     - pathlib
 
