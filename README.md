@@ -5,11 +5,15 @@ Home: https://github.com/dengwirda/jigsaw-python
 
 Package license: custom
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jigsawpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: jigsawpy is the python interface to JIGSAW, which is a Delaunay-based
 unstructured mesh generator for two- and three-dimensional geometries.
 
+
+Development: https://github.com/dengwirda/jigsaw-python
+
+Documentation: https://github.com/dengwirda/jigsaw-python
 
 JIGSAW is a stand-alone mesh generator written in c++, based on the
 general-purpose meshing package JIGSAW. This toolbox provides a Python
