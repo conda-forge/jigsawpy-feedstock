@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -27,12 +27,14 @@ requirements:
 test:
   requires:
     - matplotlib-base
+    - pip
   source_files:
     - files/*.msh
     - tests/*.py
     - example.py
     - cache/.keep
   commands:
+    - pip check
     - python example.py --IDnumber 0
     - python example.py --IDnumber 1
     - python example.py --IDnumber 2
