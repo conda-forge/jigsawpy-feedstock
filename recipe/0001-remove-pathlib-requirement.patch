@@ -1,0 +1,12 @@
+diff -ruN jigsaw-python-0.3.3/setup.py jigsaw-python-0.3.3-patch/setup.py
+--- jigsaw-python-0.3.3/setup.py	2020-10-07 06:48:50.000000000 +0200
++++ jigsaw-python-0.3.3-patch/setup.py	2021-03-22 17:09:25.091493613 +0100
+@@ -17,7 +17,7 @@
+ KEYWORDS = "Mesh-generation Delaunay Voronoi"
+ 
+ REQUIRED = [
+-    "numpy", "pathlib"
++    "numpy"
+ ]
+ 
+ CLASSIFY = [

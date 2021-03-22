@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/dengwirda/jigsaw-python/archive/v{{ version }}.tar.gz
   sha256: 5744e992c0e68392213e4c6a6490a19b97bd5cc852dec06cd42d9eaa995e05c2
+  patches:
+    - 0001-remove-pathlib-requirement.patch
 
 build:
   noarch: python
