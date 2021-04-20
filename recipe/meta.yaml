@@ -1,19 +1,17 @@
 {% set name = "jigsawpy" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.6.rc1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/dengwirda/jigsaw-python/archive/v{{ version }}.tar.gz
-  sha256: 5744e992c0e68392213e4c6a6490a19b97bd5cc852dec06cd42d9eaa995e05c2
-  patches:
-    - 0001-remove-pathlib-requirement.patch
+  git_url: https://github.com/dengwirda/jigsaw-python.git
+  git_rev: master
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,9 +20,9 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - jigsaw 0.9.14
+    - jigsaw 0.9.15.rc1
     - numpy
-    - pathlib
+    - scipy
 
 test:
   requires:
@@ -46,6 +44,7 @@ test:
     - python example.py --IDnumber 6
     - python example.py --IDnumber 7
     - python example.py --IDnumber 8
+    - python example.py --IDnumber 9
 
 about:
   home: https://github.com/dengwirda/jigsaw-python

@@ -1,0 +1,4 @@
+channel_targets:
+  - conda-forge jigsaw_dev
+channel_sources:
+  - conda-forge/label/jigsaw_dev,conda-forge,defaults
