@@ -1,5 +1,5 @@
 {% set name = "jigsawpy" %}
-{% set version = "0.3.6.rc1" %}
+{% set version = "0.3.6.rc2" %}
 
 package:
   name: {{ name|lower }}
