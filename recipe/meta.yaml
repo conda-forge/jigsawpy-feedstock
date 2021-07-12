@@ -1,5 +1,5 @@
 {% set name = "jigsawpy" %}
-{% set version = "0.3.6.rc1" %}
+{% set version = "0.3.6.rc2" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - jigsaw 0.9.15.rc1
+    - jigsaw 0.9.15.rc2
     - numpy
     - scipy
 
