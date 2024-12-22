@@ -13,15 +13,16 @@ source:
 
 build:
   noarch: python
-  number: 2
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 3
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - jigsaw 0.9.14
     - numpy
 
@@ -29,6 +30,7 @@ test:
   requires:
     - matplotlib-base
     - pip
+    - python {{ python_min }}
   source_files:
     - files/*.msh
     - tests/*.py
